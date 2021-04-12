@@ -57,7 +57,9 @@ def main():
     if st.button("Predict"):
             res=pred_iris(classfier_name,SepalLengthcm,SepalWidthcm,PetalLengthcm,PetalWidthcm) 
             list1=['Iris-setosa','Iris-versicolor','Iris-virginica'] 
-            st.write("Result",list1[np.argmax(res)])
+            ans=list1[np.argmax(res)]
+            
+            st.success(ans)
     
     
 if __name__=='__main__':
