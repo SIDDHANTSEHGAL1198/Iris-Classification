@@ -35,7 +35,7 @@ def pred_iris(algo_name,SepalLength,SepalWidth,PetalWidth,PetalLength):
 # Deployment time Baby
 
 def main():
-    df=pd.read_csv('G:/Study Material/Projects/Iris Flower Dataset/Classification/Iris.csv')
+    df=pd.read_csv(r'Iris.csv')
     
     
     st.title("Iris Classification")
